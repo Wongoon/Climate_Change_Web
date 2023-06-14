@@ -1,0 +1,12 @@
+.contents{
+    position: relative;
+    background: var(--body-clr);
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+.sidebar.close ~ .contents{
+    left: 78px;
+    width: calc(100% - 78px);
+}

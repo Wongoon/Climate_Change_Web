@@ -2,9 +2,78 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Climate Change Web</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>init</h1>
+    <nav class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-bar-chart' ></i>
+            <span class="logo_name">기후 변화 그래프</span>
+            <i class="bx bx-chevron-right toggle"></i>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class="bx bx-home-alt icon"></i>
+                    <span class="link_name">Home</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-thermometer icon'></i>
+                        <span class="link_name">Temperature</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Temperature</a></li>
+                    <li><a href="#">Graph</a></li>
+                    <li><a href="#">World Map</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-water icon'></i>
+                    <span class="link_name">Sea Level</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Sea Level</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-skull icon'></i>
+                    <span class="link_name">Disaster</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Disaster</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cloud icon'></i>
+                    <span class="link_name">GreenHouse Gas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">GreenHouse Gas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="contents">
+        <div class="content" id="tab1"></div>
+        <div class="content" id="tab2"></div>
+        <div class="content" id="tab3"></div>
+        <div class="content" id="tab4"></div>
+        <div class="content" id="tab5"></div>
+    </div>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>
