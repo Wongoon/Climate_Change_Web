@@ -1,12 +1,18 @@
 .contents{
-    position: relative;
+    position: absolute;
     background: var(--body-clr);
     height: 100vh;
-    left: 260px;
-    width: calc(100% - 260px);
-    transition: all 0.5s ease;
+    right: 0;
+    width: calc(100% - 250px);
+    transition: all 0.4s ease;
 }
 .sidebar.close ~ .contents{
-    left: 78px;
-    width: calc(100% - 78px);
+    width: calc(100% - 88px);
+    transition: all 0.6s ease;
+}
+.content{
+    display: none;
+}
+.content.current{
+    display: block;
 }
