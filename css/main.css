@@ -12,7 +12,39 @@
 }
 .content{
     display: none;
+    width: 100%;
+    height: 100%;
 }
 .content.current{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content canvas{
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: '카페24단정해';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#Home span{
+    margin: 20px;
+}
+#Home .title{
+    height: 300px;
+    line-height: 300px;
+    font-size: 60pt;
+    text-align: center;
+    font-family: '카페24단정해';
+    color: #c0caea;
+    -webkit-text-stroke: 1px #788dd2;
+    text-shadow: 2pt 2pt #788dd2;
+}
+#Home .subtitle{
+    font-size: 2em;
 }
